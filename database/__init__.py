@@ -15,6 +15,8 @@ engine = create_engine(
 Base = declarative_base()
 
 from database.models.user import User
+from database.models.session import Session
+from database.models.todo import Todo
 
 Base.metadata.create_all(bind=engine)
 
